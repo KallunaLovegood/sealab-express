@@ -1,0 +1,211 @@
+// LOOM AND LEAF STYLES
+.loomandleaf {
+  background-color: @DARK;
+  overflow: hidden;
+	
+  // MACBOOK
+  .macbook {
+    background-color: @LOOMBLUE;
+    padding-bottom: 60px;
+		margin-top: 134px;
+    .container {
+      margin: 0 auto;
+      max-width: 1000px;
+      padding-top: 70px;
+      position: static;
+			.macbookImg {
+				margin: 0 auto;
+			}
+    }
+  }
+	
+	// SUMMARY
+	.summary {
+	  background-color: @WHITE;
+    padding-bottom: 30px;
+		.container {
+		  .clearfix ();
+      margin: 0 auto;
+      max-width: 600px;
+      padding-top: 60px;
+			padding-bottom: 60px;
+      position: static;
+			text-align: center;
+			.company {
+				font-family:'Open Sans',sans-serif;
+				font-size:2.25em;
+				font-weight:300;
+				color:@DARKGRAY;
+				display: inline;
+			}
+			.saatva {
+				font-family:'Open Sans',sans-serif;
+				font-size:1.25em;
+				font-weight:300;
+				color:@DARKGRAY;
+				display: inline;
+			}
+			.blurb {
+				font-family:'Open Sans',sans-serif;
+				font-size:0.85em;
+				font-weight:300;
+				color:@DARKGRAY;
+				margin-top: 5px;
+				line-height: 1.5em;
+			}
+			.focus {
+				font-family:'Open Sans',sans-serif;
+				font-size:0.85em;
+				font-weight:300;
+				color:@DARKGRAY;	
+				text-align: center;
+				border-style:solid;
+				border-width:2px;
+				border-color: rgba(46,50,67,0.5);
+				max-width: 500px;
+				margin: 10px auto 0px auto;
+				padding: 5px 15px;
+				line-height: 1.5em;
+			}
+		}
+	}
+	
+	  // DUAL IMAGES
+  .dualImages {
+    background-color: @LIGHTGRAY;
+    padding-bottom: 100px;
+    .container {
+      .clearfix ();
+      margin: 0 auto;
+      max-width: 1000px;
+      padding-top: 70px;
+      position: static;
+      .images {
+				margin: 0 auto;
+				text-align: center;
+        .left {
+          background-repeat: no-repeat;
+          float: left;
+					margin-right: 15px;
+					display: inline-block;
+        }
+        .right {
+          background-repeat: no-repeat;
+          float: left;
+					margin-left: 15px;
+					display: inline-block;
+        }
+      }
+    }
+  }
+	
+  // MATTRESS
+  .mattress {
+    background-color: @LOOMBLUE;
+    padding-bottom: 60px;
+    .container {
+      margin: 0 auto;
+      max-width: 1000px;
+      padding-top: 70px;
+      position: static;
+			.mattressImg {
+				margin: 0 auto;
+			}
+    }
+  }	
+	
+	// PROJECT NOTES
+	.projectNotes {
+	  background-color: @WHITE;
+    padding-bottom: 30px;
+		.container {
+		  .clearfix ();
+      margin: 0 auto;
+      max-width: 600px;
+      padding-top: 60px;
+			padding-bottom: 60px;
+      position: static;
+			text-align: center;
+			.content {
+				font-family:'Open Sans',sans-serif;
+				font-size:0.85em;
+				font-weight:300;
+				color:@DARKGRAY;
+				margin-top: 5px;
+				line-height: 1.5em;
+			}
+		}
+	}
+
+
+	
+  // *************
+  // MEDIA QUERIES
+  // *************
+
+  // ******* TABLET *******
+  @media (max-width: 1300px) {
+
+    // MACBOOK
+    .macbook {
+      .container {
+				.macbookImg {
+					width: 90%;
+					height: auto;
+				}
+			}
+    } // macbook
+
+		// SUMMARY
+		.summary {
+			.container {
+				width: 80%;
+				.focus {
+					width: 90%;
+				}
+			}
+		} // summary
+
+    // DUAL IMAGES
+    .dualImages {
+      .container {
+				.images {
+					.left {
+					display: block;
+					float: none;
+					margin: 0 auto;
+					width: 80%;
+					height: auto;
+					}
+					.right {
+					display: block;
+					float: none;
+					margin: 0 auto;
+					width: 80%;
+					height: auto;
+					margin-top: 10px;
+					}
+				}
+			}
+    } //dual images		
+
+    // MATTRESS
+    .mattress {
+			.container {
+				.mattressImg {
+					width: 80%;
+					height: auto;
+				}
+			}
+    } //mattress
+
+    // PROJECT NOTES
+    .projectNotes {
+			.container {
+				width: 80%;
+			}
+    } //project notes		
+
+  } // media	
+
+}

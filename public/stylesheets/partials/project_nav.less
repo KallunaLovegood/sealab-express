@@ -1,0 +1,100 @@
+
+// PROJECT NAV
+.projectButtons {
+	
+	background-color: @LIGHTGRAY;
+	color: @DARKGRAY;
+	.container {
+		.clearfix ();
+		margin: 0 auto;
+		max-width: 1000px;
+		.previousProject {
+			display: block;
+			float: left;
+			width: 40%;
+			.imgPreviousProject {
+				display: inline-block;
+				float: left;
+				height: 30px;
+				width: auto;
+				padding: 85px 0;
+			}
+			.textPreviousProject {
+				float: left;
+				font-family:'Open Sans',sans-serif;
+				font-size:0.85em;
+				font-weight:400;
+				color:@DARK;
+				text-align: center;
+				padding: 89px 0 89px 10px;
+			}
+		}
+		.allProjects {
+			display: block;
+			float: left;
+			width: 20%;
+			margin: 56px auto;
+			.imgAllProjects {
+				display: block;
+				height: 30px;
+				width: auto;
+				margin: 0 auto 15px;
+			}
+			.textAllProjects {
+				display: block;
+				font-family:'Open Sans',sans-serif;
+				font-size:0.85em;
+				font-weight:400;
+				color:@DARK;
+				text-align: center;			
+			}
+		}
+		.nextProject {
+			display: block;
+			float: left;
+			width: 40%;		
+			.textNextProject {
+				display: inline-block;
+				float: right;
+				font-family:'Open Sans',sans-serif;
+				font-size:0.85em;
+				font-weight:400;
+				color:@DARK;
+				text-align: center;
+				padding: 89px 10px 89px 0;
+			}		
+			.imgNextProject {
+				display: inline-block;
+				float: right;
+				height: 30px;
+				width: auto;
+				padding: 85px 0;
+			}
+
+		}
+	}
+
+
+  // *************
+  // MEDIA QUERIES
+  // *************
+
+  // ******* TABLET *******
+  @media (max-width: 1300px) {
+
+    // PROJECT NAV
+		.container {
+			width: 90%;
+			.previousProject {
+				width: 50%;
+			}
+			.allProjects {
+				display: none;
+			}
+			.nextProject {
+				width: 50%;
+			}
+		}
+  } // media	
+}
+

@@ -1,0 +1,111 @@
+// MIXINS
+
+
+// GRADIENTS
+.mixinGradientHero () {
+  background: #17354e; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMTczNTRlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQ1MjQ0OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(-45deg,  #17354e 0%, #452448 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#17354e), color-stop(100%,#452448)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  #17354e 0%,#452448 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  #17354e 0%,#452448 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  #17354e 0%,#452448 100%); /* IE10+ */
+  background: linear-gradient(135deg,  #17354e 0%,#452448 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#17354e', endColorstr='#452448',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+
+.mixinGradientTestimonial () {
+  background: #009883; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDA5ODgzIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwOTU5YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(-45deg,  #009883 0%, #00959c 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#009883), color-stop(100%,#00959c)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  #009883 0%,#00959c 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  #009883 0%,#00959c 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  #009883 0%,#00959c 100%); /* IE10+ */
+  background: linear-gradient(135deg,  #009883 0%,#00959c 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009883', endColorstr='#00959c',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+
+
+// CLEARFIX
+.clearfix () {
+  *zoom: 1;
+  &:before, &:after {
+    display: table;
+    line-height: 0;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+// FONTS
+.mixinHeader (@color) {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  display: inline-block;
+  color: @color;
+}
+
+.mixinHeaderSmall (@color) {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8em;
+  font-weight: 300;
+  color: @color;
+}
+
+.mixinSubheader (@color) {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9em;
+  font-weight: 300;
+  font-style: italic;
+  color: @color;
+}
+
+
+// ICONS
+.icon (@path, @width, @height) {
+  background-image: url(@path);
+  width: @width;
+  height: @height;
+}
+
+
+// TRANSITIONS
+.transition (@what, @time) {
+  transition: @what @time ease-in-out;
+  -moz-transition: @what @time ease-in-out;
+  -webkit-transition: @what @time ease-in-out;
+}
+
+
+// BUTTONS
+.mixinSolidButton (@color) {
+  margin-top: 50px;
+  text-align: center;
+  a {
+    color: @WHITE;
+    background-color: @color;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: .9em;
+    font-weight: bold;
+    margin-top: 50px;
+    &:hover {
+      opacity: .5;
+      .transition (opacity, .50s);
+    }
+  }
+}
+
+
+
+
+
+
+
