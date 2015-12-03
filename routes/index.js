@@ -13,17 +13,17 @@ router.get('/projects', function(req, res, next) {
 
 /* GET Loom & Leaf. */
 router.get('/loomandleaf', function(req, res, next) {
-  res.render('pages/loomandleaf', { title: 'SeaLab | Loom & Leaf' });
+  res.render('pages/loomandleaf', { title: 'SeaLab | Loom & Leaf', previous: './sailsjs', next: './snapkitchen' });
 });
 
 /* GET Snap Kitchen. */
 router.get('/snapkitchen', function(req, res, next) {
-  res.render('pages/snapkitchen', { title: 'SeaLab | Snap Kitchen' });
+  res.render('pages/snapkitchen', { title: 'SeaLab | Snap Kitchen', previous: './loomandleaf', next: './sailsjs' });
 });
 
 /* GET Sails. */
 router.get('/sailsjs', function(req, res, next) {
-  res.render('pages/sailsjs', { title: 'SeaLab | Sails.js' });
+  res.render('pages/sailsjs', { title: 'SeaLab | Sails.js', previous: './snapkitchen', next: './loomandleaf' });
 });
 
 module.exports = router;
